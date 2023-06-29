@@ -1,4 +1,4 @@
-# Japanese text scraping processing cluster analysis
+# Japanese text scraping, preprocessing and cluster analysis with LDA
 # Web scraping
 
 I used Selenium’s ChromeDriver to automatically access a Japanese technology blog by providing the blog's webpage URL to the driver.  
