@@ -120,13 +120,13 @@ article_df = pd.DataFrame(list(article_dict.items()), columns=['article_url', 'a
 parquet_file = './article_data.parquet'
 fp.write(parquet_file, article_df, compression='GZIP')
 
-jp_stopwords = open('japanese_stopwords.txt', 'r')
-jp_stopwords = jp_stopwords.read()
-jp_stopwords = jp_stopwords.split('\n')
-
 '''________________________________________________________________'''
 
 ''' 3. Conduct a topic modelling to cluster the document text into topics '''
+
+jp_stopwords = open('japanese_stopwords.txt', 'r')
+jp_stopwords = jp_stopwords.read()
+jp_stopwords = jp_stopwords.split('\n')
 
 class ArticleTopics:
     def __init__(self, document_text):
