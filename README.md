@@ -2,7 +2,7 @@
 # Web scraping
 
 I used Selenium’s ChromeDriver to automatically access a Japanese technology blog by providing the blog's webpage URL to the driver.  
-To get each article’s text data, I followed the steps below using the Beautiful soup library:
+To get each article’s text data, I followed the steps below using the BeautifulSoup library:
 - collect all the URLs of the buttons that are used to navigate to the next page of the blog
 - collect all the URLs of the articles from every page by inspecting the location of the URLs in the HTML tags in advance
 - remove tags storing unneeded information for the cluster analysis, such as page metadata, code scripts, etc.
