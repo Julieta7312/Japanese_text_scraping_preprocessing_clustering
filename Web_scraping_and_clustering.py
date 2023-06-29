@@ -187,7 +187,6 @@ class ArticleTopics:
 
 
 # Create instances of ArticleTopics class and retrieve the topics and tokens for each article
-
 for document_text in article_df['article_text']:
     class_instance = ArticleTopics(document_text)
     topics = class_instance.get_topics()
