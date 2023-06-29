@@ -149,7 +149,7 @@ class ArticleTopics:
         tokens = [token for token in tokens if token not in jp_stopwords]
 
         # remove words written in hiragana 
-        kana_re = re.compile('^[ぁ-ゖ]+$') # depends on the text
+        kana_re = re.compile('^[ぁ-ゖ]+$')
         tokens = [token for token in tokens if not kana_re.match(token)]
         return tokens
 
